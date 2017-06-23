@@ -14,7 +14,7 @@ For example I may really like game art and thus I would be a user who creates a 
 
 The server you are using is a node server with Mongodb and Sessions. The user auth routes have already been created but you will be in charge of actually creating a user login/register form. 
 
-### Step 1 -  Where is the output? `Total Points: 5`
+### Step 1 -  Where is the output? `Total Points: 10`
 
 To get started you are going to need to create some schemas and think about the necessary relationships. Draw these out before you start coding.
 
@@ -28,27 +28,27 @@ Also a vault has many keeps and keeps could have many vaults but only one author
 Also to make things more simplistic once a keep is marked public it can no longer be deleted.
 
 Requirements:
-- `1 point`: Users register and login
-- `1 point`: Users automatically login on page refresh
-- `1 point`: Users can create and manage their keeps
-- `1 point`: Users can see all public keeps.
-- `1 point`: Users can create vaults to store their keeps
+- `2 point`: Users register and login
+- `2 point`: Users automatically login on page refresh
+- `2 point`: Users can create and manage their keeps
+- `2 point`: Users can see all public keeps.
+- `2 point`: Users can create vaults to store their keeps
 
-### Step 2 - Adding the functionality `Total Points: 10`
+### Step 2 - Adding the functionality `Total Points: 20`
 
 Once you get to the point where users can create vaults its time to put them to work. Users need a simple way to add a paticular keep to the vault of their choice while browsing. Also to give users some credit for creating excellent keeps lets keep track of the number of times a keep has been added to any vault. We also want to keep track of the number of views each keep gets.
 
 Requirements: 
-- `2.5 points`: Users can add keeps to their individual vaults
-- `2.5 points`: Anytime a `keep` is viewed or `kept in a vault` that items count should go up.  
-- `5 points`: Users can manage their keeps and vaults from a dashboard.
+- `5 points`: Users can add keeps to their individual vaults
+- `5 points`: Anytime a `keep` is viewed or `kept in a vault` that items count should go up.  
+- `10 points`: Users can manage their keeps and vaults from a dashboard.
 	- ***hint***: You will likely need a route that might look something like **vaults/:vaultId**
  
-### Step 3 - Prettify `Total Points: 5`
+### Step 3 - Prettify `Total Points: 10`
 What this site is already pretty if you follow the mocks :wink: Make sure the features you add are attactive.
 
 Requirements:
-- `5 points`: Your site should be attractive. I would recommend cards for keeps. Also When hovering over a keep show the three buttons from the bottm overlaid on the image and make them clickable. 
+- `10 points`: Your site should be attractive. I would recommend cards for keeps. Also When hovering over a keep show the three buttons from the bottm overlaid on the image and make them clickable. 
 
 ### BONUS - Sharing the fun `Total Points: 5`
 Requirements: 
