@@ -32,7 +32,9 @@ app.use(session)
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 console.log("what directory", __dirname)
+// SERVE STATIC FILES FROM THE WWW BUILD
 app.use(express.static(__dirname + '/../public'))
+
 app.use('*', logger)
 app.use('*', cors(corsOptions))
 app.use('/', Auth)

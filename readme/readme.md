@@ -56,8 +56,33 @@ Requirements:
 - Write a few tests for your components.
 - When a user click the share icon they should be able to post that share to the various social medias (Facebook, Twitter, ect) 
 
+### Deployment Time
+When you are ready to push you site live you can simply run the `npm run build` command
+
+This process will take your files from the **www** directory and will minify them and put the minified files into your **server/public** directory
+
+This happens because of a change to the **www/config/index.js** as shown here
+
+<img src="www-config-edits.png" style="width: 80%">
+
+Each time you build your project you will need to commit the changes in git and deploy the server directory to your [heroku app](heroku.com). If you haven't yet go through the steps to create a new app on heroku and then from your command line at the root of the keepr project type in the following command
+
+```terminal
+//ONE TIME SETUP
+$ git add remote https://git.heroku.com/<YOURHEROKUAPPNAME>.git
+``` 
+
+Once you have added the heroku remote you can now push just the **server** directory by using a [git subtree](https://www.atlassian.com/blog/git/alternatives-to-git-submodule-git-subtree). In short subtrees allow you to perform git commands on specified directories. So the following command will push only the server directory to your heroku remote.
+
+```terminal
+// Everytime you build
+$ git subtree push --prefix=server heroku master
+```
+
+
 ### Finished?
 When You are finished let us know.
+
 
 ### Some inspirational mocks
 
