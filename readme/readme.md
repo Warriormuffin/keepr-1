@@ -69,7 +69,7 @@ Each time you build your project you will need to commit the changes in git and 
 
 ```terminal
 //ONE TIME SETUP
-$ git add remote https://git.heroku.com/<YOURHEROKUAPPNAME>.git
+$ git remote add heroku https://git.heroku.com/<YOURHEROKUAPPNAME>.git
 ``` 
 
 Once you have added the heroku remote you can now push just the **server** directory by using a [git subtree](https://www.atlassian.com/blog/git/alternatives-to-git-submodule-git-subtree). In short subtrees allow you to perform git commands on specified directories. So the following command will push only the server directory to your heroku remote.
